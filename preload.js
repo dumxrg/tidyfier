@@ -10,6 +10,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   readFile: (filePath) => ipcRenderer.invoke('read-file', filePath),
   
   testAPI: () => 'API is working'
+
 });
 
 
